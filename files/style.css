@@ -7,45 +7,34 @@ html,body{
 	width: 100%;
 	height: 100%;
 }
+html{
+	font-size: 37.5px;
+}
+
 /*loading*/
 #loading{
 	height: 100%;
 	background-color: rgb(228,248,238);
-	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction:column;
 }
 .loading_header{
 	flex:3;
 }
-.loading_header img{
-	width: 121px;
-	height: 63.5px;
-	margin-top: 50px;
+.loading_logo_header{
+	width: 3.2266666rem;
+	height: 1.693333rem;
+	margin-top: 1.3333rem;
 }
-.loading_body{
-	flex:10;
-	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction:column;
-	margin-bottom: 100px;
-}
-.loading_body_txt{
-	font-size: 14px;
+.loading_txt{
+	font-size: 0.37333rem;
 	color: rgb(28,176,77);
-	margin-bottom: 15px;
+	margin-bottom: 0.4rem;
 	font-family: 'Helvetica Neue Regular', Helvetica, Arial, Tahoma, 'Microsoft YaHei', 'San Francisco', 微软雅黑, 'Hiragino Sans GB', STHeitiSC-Light;
 }
-.loading_body_bar{
-	width: 300px;
-	height: 10px;
+.loading_bar{
+	width: 8rem;
+	height: 0.26666rem;
 	background-color: rgb(28,176,77);
-	border-radius: 10px;
-}
-.loading_footer{
-	flex:1;
+	border-radius: 0.26666rem;
 }
 .loading_footer img{
 	width: 68.5px;
@@ -54,35 +43,88 @@ html,body{
 
 
 
+
+
 /*game_start*/
 #game_start{
+	width: 100%;
 	height: 100%;
-	background-image: url(../images/mainpage-bg.png);
+	background: rgb(251, 100, 8);
+	background-size: cover;
+}
+.game_start_footer_bg{
+	position: absolute;
+	width: 10rem;
+	top: -2rem;
+}
+.game_start_footer_btn{
+	width: 5.13rem;
+	height: 1.48rem;
+	position: absolute;
+	bottom: 1.2rem;
+	left: 2.435rem;
+}
+.game_start_footer_logo{
+	width: 1.83rem;
+	height: 0.76rem;
+	position: absolute;
+	bottom: 0.1rem;
+	left: 4.085rem;
+}
+
+
+
+
+/*game_content*/
+#game_content{
+	height: 100%;
+	background-image: url(../images/quspage-bg.png);
 	background-size: cover;
 	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction:column;
 }
-.game_start_placeholder{
-	flex:5;
+.game_content_header{
+	flex:3;
 }
-.game_start_footer{
-	flex:1;
-	display: -webkit-flex;
-	/*justify-content: center;*/
-	align-items: center;
-	flex-direction:column;
-}
-.game_start_footer_btn{
-	width: 192.5px;
-	height: 55.5px;
-}
-.game_start_footer_logo{
+.game_content_header_logo{
 	width: 68.5px;
 	height: 28.5px;
-	margin-top: 10px;
 }
+.game_content_header_slogan{
+	width: 146px;
+	height: 144.5px;
+}
+.game_content_header_time span{
+	color:rgba(255, 255, 255, 0);
+	font-size: 18px;
+	font-weight: 700px;
+	text-shadow: #fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+
+}
+.game_content_question{
+	flex:4;
+}
+.game_content_question_num span{
+	font-size: 24px;
+	color: rgb(182,187,193);
+}
+.game_content_options{
+	flex:3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
