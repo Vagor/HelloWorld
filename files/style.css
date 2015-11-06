@@ -2,43 +2,65 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Helvetica Neue Regular', Helvetica, Arial, Tahoma, 'Microsoft YaHei', 'San Francisco', 微软雅黑, 'Hiragino Sans GB', STHeitiSC-Light;
 }
 html,body{
 	width: 100%;
 	height: 100%;
 }
-html{
-	font-size: 37.5px;
+/*iphone5*/
+@media screen and (min-width: 320px) {
+	html{
+		font-size: 32px;
+	}
 }
-
+/*iphone6*/
+@media screen and (min-width: 375px) {
+	html{
+		font-size: 37.5px;
+	}
+}
+/*iphone6Plus*/
+@media screen and (min-width: 414px) {
+	html{
+		font-size: 41.4px;
+	}
+}
 /*loading*/
 #loading{
 	height: 100%;
 	background-color: rgb(228,248,238);
 }
-.loading_header{
-	flex:3;
-}
 .loading_logo_header{
+	position: absolute;
+	left: 3.386666rem;
 	width: 3.2266666rem;
 	height: 1.693333rem;
-	margin-top: 1.3333rem;
+	margin-top: 1.333333rem;
 }
 .loading_txt{
+	position: absolute;
+	left: 4rem;
+	top: 7rem;
 	font-size: 0.37333rem;
 	color: rgb(28,176,77);
 	margin-bottom: 0.4rem;
-	font-family: 'Helvetica Neue Regular', Helvetica, Arial, Tahoma, 'Microsoft YaHei', 'San Francisco', 微软雅黑, 'Hiragino Sans GB', STHeitiSC-Light;
 }
 .loading_bar{
+	position: absolute;
+	left: 1rem;
+	top: 8rem;
 	width: 8rem;
 	height: 0.26666rem;
 	background-color: rgb(28,176,77);
 	border-radius: 0.26666rem;
 }
-.loading_footer img{
-	width: 68.5px;
-	height: 28.5px;
+.loading_logo_footer{
+	position: absolute;
+	bottom: 0.1rem;
+	left: 4.3rem;
+	width: 1.826666rem;
+	height: 0.76rem;
 }
 
 
@@ -77,46 +99,130 @@ html{
 
 /*game_content*/
 #game_content{
+	width: 100%;
 	height: 100%;
-	background-image: url(../images/quspage-bg.png);
-	background-size: cover;
-	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction:column;
+	background-color:rgb(210,212,214);
 }
-.game_content_header{
-	flex:3;
+.game_content_bg{
+	position: absolute;
+	top: -1.6rem;
+	width: 10rem;
 }
-.game_content_header_logo{
-	width: 68.5px;
-	height: 28.5px;
-}
-.game_content_header_slogan{
-	width: 146px;
-	height: 144.5px;
-}
-.game_content_header_time span{
-	color:rgba(255, 255, 255, 0);
-	font-size: 18px;
-	font-weight: 700px;
-	text-shadow: #fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
 
+.game_content_logo{
+	width: 1.826666rem;
+	height: 0.76rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 0.5rem;
 }
-.game_content_question{
-	flex:4;
+.game_content_slogan{
+	width: 3.893333rem;
+	height: 3.853333rem;
+	position: absolute;
+	left: 3.0533333rem;
+	top: 0.3rem;
+}
+.game_content_time{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+	font-size: 0;
+}
+.game_content_time span{
+	color:rgba(255, 255, 255, 1);
+	font-size: 0.48rem;
+	text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px -2px 0px;
 }
 .game_content_question_num span{
-	font-size: 24px;
-	color: rgb(182,187,193);
+	font-size: 0.5rem;
+	color: #ccc;
+	position: absolute;
+	left: 4.65rem;
+	top: 5.4rem;
 }
-.game_content_options{
-	flex:3;
+.game_content_options_option{
+	width: 3.5rem;
+	height: 1.2rem;
+	border-radius: 0.25rem;
+	background-color: rgb(56,67,76);
+	text-align: center;
+	font-size: 0.55rem;
+	color:rgba(255, 255, 255, 1);
+	line-height: 1.2rem;
+}
+.choice1{
+	position: absolute;
+	bottom: 2rem;
+	left: 1rem;
+}
+.choice2{
+	position: absolute;
+	bottom: 2rem;
+	right: 1rem;
+}
+.choice3{
+	position: absolute;
+	bottom: 0.5rem;
+	left: 1rem;
+}
+.choice4{
+	position: absolute;
+	bottom: 0.5rem;
+	right: 1rem;
 }
 
 
+/*game_result*/
+#game_result{
+	background-color: rgb(251,100,9);
+}
+.game_result_bg{
+	width: 10rem;
+}
+.game_result_slogan{
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+	width: 2.8rem;
+}
+.game_result_logo{
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	width: 1.613333rem;
+}
+.game_result_img{
+	width: 5.066666rem;
+	position: absolute;
+	left: 2.46666rem;
+	top: 3rem;
+}
+.game_result_txt{
+	color: #ff7000;
+	position: absolute;
+	top: 8rem;
+	left: 2rem;
+	font-size: 0.6rem;
+	text-align: center;
+	text-shadow: #fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -2px 0;
 
-
+}
+.result_lose{
+	display: none;
+}
+.game_result_btn_again{
+	height: 1.493333rem;
+	position: absolute;
+	left: 1rem;
+	bottom: 2rem;
+}
+.game_result_btn_share{
+	height: 1.493333rem;
+	position: absolute;
+	right: 1rem;
+	bottom: 2rem;
+}
 
 
 
