@@ -31,14 +31,14 @@ html,body{
 	height: 100%;
 	background-color: rgb(228,248,238);
 }
-.loading_logo_header{
+.loading-logo-header{
 	position: absolute;
 	left: 3.386666rem;
 	width: 3.2266666rem;
 	height: 1.693333rem;
 	margin-top: 1.333333rem;
 }
-.loading_txt{
+.loading-txt{
 	position: absolute;
 	left: 4rem;
 	top: 7rem;
@@ -46,16 +46,19 @@ html,body{
 	color: rgb(28,176,77);
 	margin-bottom: 0.4rem;
 }
-.loading_bar{
+
+.loading-bar{
 	position: absolute;
 	left: 1rem;
 	top: 8rem;
 	width: 8rem;
 	height: 0.26666rem;
-	background-color: rgb(28,176,77);
+	background-color:#e6e6e6;
+	border: 0.026666rem solid #0064B4; 
 	border-radius: 0.26666rem;
+	color: #0064B4
 }
-.loading_logo_footer{
+.loading-logo-footer{
 	position: absolute;
 	bottom: 0.1rem;
 	left: 4.3rem;
@@ -67,26 +70,26 @@ html,body{
 
 
 
-/*game_start*/
-#game_start{
+/*game-start*/
+#game-start{
 	width: 100%;
 	height: 100%;
 	background: rgb(251, 100, 8);
 	background-size: cover;
 }
-.game_start_footer_bg{
+.game-start-bg{ 
 	position: absolute;
 	width: 10rem;
 	top: -2rem;
 }
-.game_start_footer_btn{
+.game-start-btn{
 	width: 5.13rem;
 	height: 1.48rem;
 	position: absolute;
 	bottom: 1.2rem;
 	left: 2.435rem;
 }
-.game_start_footer_logo{
+.game-start-logo{
 	width: 1.83rem;
 	height: 0.76rem;
 	position: absolute;
@@ -97,51 +100,60 @@ html,body{
 
 
 
-/*game_content*/
-#game_content{
+/*game-content*/
+#game-content{
 	width: 100%;
 	height: 100%;
 	background-color:rgb(210,212,214);
 }
-.game_content_bg{
+.game-content-bg{
 	position: absolute;
 	top: -1.6rem;
 	width: 10rem;
 }
 
-.game_content_logo{
+.game-content-logo{
 	width: 1.826666rem;
 	height: 0.76rem;
 	position: absolute;
 	left: 0.5rem;
 	top: 0.5rem;
 }
-.game_content_slogan{
+.game-content-slogan{
 	width: 3.893333rem;
 	height: 3.853333rem;
 	position: absolute;
 	left: 3.0533333rem;
 	top: 0.3rem;
 }
-.game_content_time{
+.game-content-time{
 	position: absolute;
 	right: 0.5rem;
 	top: 0.5rem;
 	font-size: 0;
 }
-.game_content_time span{
+.game-content-time span{
 	color:rgba(255, 255, 255, 1);
 	font-size: 0.48rem;
 	text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px -2px 0px;
 }
-.game_content_question_num span{
+.game-content-question-num span{
 	font-size: 0.5rem;
 	color: #ccc;
 	position: absolute;
 	left: 4.65rem;
 	top: 5.4rem;
 }
-.game_content_options_option{
+.game-content-question-code{
+	font-size: 0.4rem;
+	position: absolute;
+	color: #ccc;
+	top: 6.5rem;
+	left: 1.3rem;
+	line-height: 0.6rem;
+	font-family: monospace;
+}
+.game-content-options-option{
 	width: 3.5rem;
 	height: 1.2rem;
 	border-radius: 0.25rem;
@@ -173,32 +185,32 @@ html,body{
 }
 
 
-/*game_result*/
-#game_result{
+/*game-result*/
+#game-result{
 	background-color: rgb(251,100,9);
 }
-.game_result_bg{
+.game-result-bg{
 	width: 10rem;
 }
-.game_result_slogan{
+.game-result-slogan{
 	position: absolute;
 	top: 0rem;
 	right: 0rem;
 	width: 2.8rem;
 }
-.game_result_logo{
+.game-result-logo{
 	position: absolute;
 	top: 0.5rem;
 	left: 0.5rem;
 	width: 1.613333rem;
 }
-.game_result_img{
+.game-result-img{
 	width: 5.066666rem;
 	position: absolute;
 	left: 2.46666rem;
 	top: 3rem;
 }
-.game_result_txt{
+.game-result-txt{
 	color: #ff7000;
 	position: absolute;
 	top: 8rem;
@@ -208,16 +220,16 @@ html,body{
 	text-shadow: #fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -2px 0;
 
 }
-.result_lose{
+.result-lose{
 	display: none;
 }
-.game_result_btn_again{
+.game-result-btn-again{
 	height: 1.493333rem;
 	position: absolute;
 	left: 1rem;
 	bottom: 2rem;
 }
-.game_result_btn_share{
+.game-result-btn-share{
 	height: 1.493333rem;
 	position: absolute;
 	right: 1rem;
