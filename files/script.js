@@ -70,7 +70,7 @@ function chooseNum(numMin,numMax){
 	var a = new Array();//定义链表节点
 	for (var i = 0; i < N; i++) {
 		a[i] = new Array();
-		a[i][0] = i;
+		a[i][0] = numMin+i;
 		a[i][1] = a[i+1];
 		a[i][2] = a[i-1];
 	};
