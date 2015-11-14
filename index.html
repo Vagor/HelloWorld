@@ -4,18 +4,19 @@
 	<meta charset="utf-8">
 	<title>HelloWorld挑战</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="./files/style.css">
-	<script type="text/javascript" src="./files/jquery-1.11.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
 
 	
 </head>
 <body>
 	<!-- loading -->
 	<div id="loading">
-		<img class="loading-logo-header" src="./images/loading-logo.png">
+		<img class="loading-logo-header" src="images/loading-logo.png">
 		<div class="loading-txt">大赛马上开始</div>
 		<progress id="prog" value="0" max="100" class="loading-bar"></progress>  
-		<img class="loading-logo-footer" src="./images/quspage-logo.png">
+		<img class="loading-logo-footer" src="images/quspage-logo.png">
 	</div>
 
 
@@ -27,9 +28,9 @@
 
 	<!-- game-start -->
 	<div id="game-start" style="display: none">
-	  <img class="game-start-bg" src="./images/mainpage-bg.png" />
-	  <img class="game-start-btn" src="./images/mainpage-normal.png" />
-	  <img class="game-start-logo" src="./images/quspage-logo.png"/>
+	  <img class="game-start-bg" src="images/mainpage-bg.png" />
+	  <img class="game-start-btn" src="images/mainpage-normal.png" />
+	  <img class="game-start-logo" src="images/quspage-logo.png"/>
 	</div>
 
 
@@ -39,29 +40,22 @@
 
 	<!-- game-content -->
 	<div id="game-content" style="display: none">
-		<img class="game-content-bg" src="./images/quspage-bg.png">
-		<img class="game-content-logo" src="./images/quspage-logo.png">
-		<img class="game-content-slogan" src="./images/quspage-slogan.png">
+		<img class="game-content-bg" src="images/quspage-bg.png">
+		<img class="game-content-logo" src="images/quspage-logo.png">
+		<img class="game-content-slogan" src="images/quspage-slogan.png">
 		<div class="game-content-time">
 			<span>time:</span>
 			<span id:"timeout">19</span>
 			<span>”</span></div>
 		<div class="game-content-question">
-			<div class="game-content-question-num"><span>19</span></div>
-			<div class="game-content-question-code">
-				<pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Hello</span><span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span>
-    <span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span><span class="o">{</span>
-     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Hello, world!"</span><span class="o">);</span>
-  <span class="o">}</span>
-<span class="o">}</span></pre>
-			</div>
+			<div class="game-content-question-num"><span></span></div>
+			<div class="game-content-question-code"></div>
 		</div>
 		<div class="game-content-options">
-			<div class="game-content-options-option choice1">A:Java</div>
-			<div class="game-content-options-option choice2">B:C#</div>
-			<div class="game-content-options-option choice3">C:Python</div>
-			<div class="game-content-options-option choice4">D:php</div>
+			<div class="game-content-options-option choice1"></div>
+			<div class="game-content-options-option choice2"></div>
+			<div class="game-content-options-option choice3"></div>
+			<div class="game-content-options-option choice4"></div>
 		</div>
 	</div>
 
@@ -72,16 +66,16 @@
 
 	<!-- game-result -->
 	<div id="game-result" style="display: none">
-		<img class="game-result-bg" src="./images/lastpage-bg.png">
-		<img class="game-result-logo" src="./images/lastpage-logo.png">
-		<!-- <img class="game-result-slogan" src="./images/lastpage-slogan.png"> -->
-		<img class="game-result-img result-lose" src="./images/lastpage-heartbreak.png">
-		<img class="game-result-img result-success" src="./images/lastpage-congratulation.png">
-		<img class="game-result-btn-again" src="./images/lastpage-again-normal.png">
+		<img class="game-result-bg" src="images/lastpage-bg.png">
+		<img class="game-result-logo" src="images/lastpage-logo.png">
+		<!-- <img class="game-result-slogan" src="images/lastpage-slogan.png"> -->
+		<img class="game-result-img result-lose" src="images/lastpage-heartbreak.png">
+		<img class="game-result-img result-success" src="images/lastpage-congratulation.png">
+		<img class="game-result-btn-again" src="images/lastpage-again-normal.png">
 		<p class="game-result-txt result-lose">So Sad!<br/>你竟然一题都没答出来</p>
 		<p class="game-result-txt result-success">恭喜你!<br/>你认出了<span>32</span>个HelloWorld<br/>击败了<span>89</span>%的菜鸟</p>
 
-		<img class="game-result-btn-share" src="./images/lastpage-share-normal.png">
+		<img class="game-result-btn-share" src="images/lastpage-share-normal.png">
 	</div>
 
 
@@ -91,7 +85,7 @@
 
 
 
-	<script type="text/javascript" src="./files/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
 

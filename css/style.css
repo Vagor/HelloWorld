@@ -138,11 +138,16 @@ html,body{
 	text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px -2px 0px;
 }
 .game-content-question-num span{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
 	font-size: 0.5rem;
+	text-align: center;
 	color: #ccc;
 	position: absolute;
-	left: 4.65rem;
-	top: 5.4rem;
+	left: 4.45rem;
+	top: 5.22rem;
 }
 .game-content-question-code{
 	font-size: 0.4rem;
@@ -159,7 +164,7 @@ html,body{
 	border-radius: 0.25rem;
 	background-color: rgb(56,67,76);
 	text-align: center;
-	font-size: 0.55rem;
+	font-size: 0.48rem;
 	color:rgba(255, 255, 255, 1);
 	line-height: 1.2rem;
 }
